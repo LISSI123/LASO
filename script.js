@@ -50,7 +50,7 @@ function mulaiGame() {
   });
 }
 
-// PARTICLE GRID
+// Particle Grid Background
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
