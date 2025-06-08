@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Tiup Emoji - BelegendBet</title>
+  <title>🌬️ Tiup Emoji - JOKERSCM</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Firebase COMPAT CDN -->
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
@@ -12,13 +12,21 @@
 </head>
 <body>
   <canvas id="particles"></canvas>
-  <div class="container">
-    <h1>Game Tiup Emoji</h1>
-    <input type="text" id="userId" placeholder="Masukkan USER ID" />
-    <input type="text" id="kupon" placeholder="Masukkan KODE KUPON" />
-    <button onclick="mulaiGame()">TIUP</button>
-    <div id="areaGame"></div>
+  <div class="container" style="max-width:420px;margin:0 auto;position:relative;z-index:2;">
+    <h1 style="font-size:2.2em;margin-top:32px;margin-bottom:18px;letter-spacing:2px;text-shadow:0 0 24px #00bfff,0 0 8px #00ffb3;">🌬️ Game Tiup Emoji <span style='font-size:0.7em;color:#00ffb3;'>JOKERSCM</span></h1>
+    <div id="login-box">
+      <input type="text" id="userId" placeholder="Masukkan USER ID" autocomplete="off" />
+      <input type="text" id="kupon" placeholder="Masukkan KODE KUPON" autocomplete="off" />
+      <button id="login-btn">MASUK</button>
+      <div id="login-msg"></div>
+    </div>
+    <div id="game-area"></div>
+    <button id="tiup-btn">🌬️ TIUP SEKARANG</button>
+    <div id="result"></div>
   </div>
+  <footer style="margin-top:48px;color:#00bfff;font-size:1em;text-align:center;opacity:0.7;letter-spacing:1px;">
+    &copy; 2025 <b>JOKERSCM</b> &bull; Powered by <span style="color:#00ffb3;">BelegendBet</span>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
