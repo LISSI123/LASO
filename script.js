@@ -103,7 +103,6 @@ function mulaiGame() {
     document.getElementById("game-area").style.display = "block";
     document.getElementById("tiup-btn").style.display = "inline-block";
     tampilkanEmoji();
-    // showWinNotif(currentUser, '🎁', 0, null); // Dihapus, notif hanya setelah TIUP
     playSound('https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa4b7e.mp3', 0.5);
   }).catch((error) => {
     showNotif("Terjadi kesalahan", true);
@@ -252,12 +251,10 @@ function tiupEmoji() {
         const emoji = selected.el.innerText;
         const hadiah = hadiahMap[emoji] || 0;
         showConfetti(centerX, centerY);
-        // Notif claim Telegram hanya muncul setelah TIUP & hadiah keluar
         showWinNotif(currentUser, emoji, hadiah, function() {
           bubbleElements = [];
           tampilkanBubblesSetelahSelesai();
         });
-        // Simpan data ke backend jika perlu
       }, 2700);
     }
   }
